@@ -5,7 +5,7 @@
 	const dispatch = createEventDispatcher();
 </script>
 
-<div class="card shadow-sm h-100">
+<div class="card shadow-sm h-100 small-card">
 	<img src={pet.image_url} class="card-img-top" alt={pet.name} />
 
 	<div class="card-body text-center">

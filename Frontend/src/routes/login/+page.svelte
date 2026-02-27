@@ -1,8 +1,9 @@
 <script>
 	import { fade, fly } from 'svelte/transition';
-	import '../../app.css';
+	import { onMount } from 'svelte';
 
-	export let data;
+	// svelte-ignore export_let_unused
+		export let data;
 
 	let email = '';
 	let password = '';
@@ -13,18 +14,20 @@
 	}
 </script>
 
-<section class="login-wrapper">
-	<div class="login-card" in:fly={{ y: 30, duration: 400, opacity: 0 }}>
+<section class="login-wrapper" in:fade>
+	<div class="login-card px-4" in:fly={{ y: 30, duration: 400, opacity: 0 }}>
 		<h2>Bienvenido</h2>
 		<p class="subtitle">Inicia sesión para continuar</p>
 
 		<form on:submit|preventDefault={handleLogin}>
 			<div class="input-group">
+				<!-- svelte-ignore a11y_label_has_associated_control -->
 				<label>Correo electrónico</label>
 				<input type="email" bind:value={email} placeholder="ejemplo@email.com" required />
 			</div>
 
 			<div class="input-group">
+				<!-- svelte-ignore a11y_label_has_associated_control -->
 				<label>Contraseña</label>
 
 				<div class="password-wrapper">
@@ -34,7 +37,8 @@
 						placeholder="••••••••"
 						required
 					/>
-
+					<!-- svelte-ignore a11y_click_events_have_key_events -->
+					<!-- svelte-ignore a11y_no_static_element_interactions -->
 					<span class="toggle-password" on:click={() => (showPassword = !showPassword)}>
 						{showPassword ? '👁' : '👁‍🗨'}
 					</span>
@@ -52,22 +56,22 @@
 
 <style>
 	.login-wrapper {
-		min-height: 100vh;
+		min-height: 85vh;
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		background: linear-gradient(135deg, #0d6efd, #6610f2);
-		padding: 1rem;
-	}
+		background: linear-gradient(135deg, #ecd75f, #b89a14);
+		padding: 1rem;	}
 
 	.login-card {
 		background: white;
-		padding: 2.5rem;
-		border-radius: 18px;
+		padding:2rem;
+		border-radius: 20px;
 		width: 100%;
-		max-width: 420px;
+		max-width: 500px;
 		box-shadow: 0 30px 60px rgba(0, 0, 0, 0.25);
 		text-align: center;
+
 	}
 
 	.login-card h2 {
@@ -81,12 +85,12 @@
 	}
 
 	.input-group {
-		margin-bottom: 1.5rem;
+		margin-bottom: 2.5rem;
 		text-align: left;
 	}
 
 	.input-group label {
-		font-size: 0.9rem;
+		font-size: 1rem;
 		font-weight: 600;
 		display: block;
 		margin-bottom: 0.5rem;
@@ -94,7 +98,7 @@
 
 	.input-group input {
 		width: 100%;
-		padding: 0.4rem;
+		padding: 0.3rem;
 		border-radius: 12px;
 		border: 1px solid #dfe1e2;
 		transition: all 0.2s ease;

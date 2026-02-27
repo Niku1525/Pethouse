@@ -63,9 +63,11 @@
 			<PetModal {selectedPet} on:close={closeModal} />
 		{/if}
 	</div>
+	<br>
+	<br>
 </section>
 
-<section class="text-center py-5 text-white bg-primary">
+<section class="text-center py-5 text-black bg-red"> 
 	<div class="container">
 		<h3>¿Tienes una mascota para dar en adopción?</h3>
 		<p>Publica su información y ayúdale a encontrar un nuevo hogar.</p>

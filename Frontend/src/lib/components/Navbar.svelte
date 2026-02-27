@@ -1,7 +1,10 @@
 <script>
 	import { onMount } from 'svelte';
+	import 'bootstrap/dist/css/bootstrap.min.css';
 	import { fly } from 'svelte/transition';
 	import '../../app.css';
+	export let showLogin = true;
+	export let variant = "default"; 
 
 	let scrolled = false;
 
@@ -18,14 +21,13 @@
 <nav
 	in:fly={{ y: -60, duration: 600 }}
 	class="navbar navbar-expand-lg fixed-top {scrolled ? 'navbar-scrolled' : 'navbar-top'}"
+	class:login-navbar={variant === "login"}
 >
 	<div class="container">
+	
+		<a class="navbar-brand brand-logo" href="/"> PetHouse </a>
 
-		<!-- Logo -->
-		<a class="navbar-brand brand-logo" href="/">
-			PetHouse
-		</a>
-
+		<!-- svelte-ignore a11y_consider_explicit_label -->
 		<button
 			class="navbar-toggler"
 			type="button"
@@ -50,7 +52,9 @@
 				</li>
 
 				<li class="nav-item ms-3">
-					<a class="btn btn-login" href="/login">Login</a>
+					{#if showLogin}
+							<a href="/login" class="nav-link nav-custom">Login</a>
+					{/if}
 				</li>
 			</ul>
 		</div>
