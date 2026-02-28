@@ -27,7 +27,7 @@
 		(pet) =>
 			pet.name.toLowerCase().includes(search.toLowerCase()) ||
 			pet.species.toLowerCase().includes(search.toLowerCase()) ||
-			(pet.breed && pet.breed.toLowerCase().includes(search.toLowerCase()))
+			(pet.race && pet.race.toLowerCase().includes(search.toLowerCase()))
 	);
 </script>
 

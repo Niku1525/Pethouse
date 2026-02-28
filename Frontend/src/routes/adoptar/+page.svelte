@@ -9,7 +9,7 @@
 			id: 1,
 			name: "Luna",
 			species: "Perro",
-			raice: "Labrador",
+			race: "Labrador",
 			age: "2 años",
 			gender: "Hembra",
 			description: "Cariñosa y sociable.",

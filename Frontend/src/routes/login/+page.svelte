@@ -85,6 +85,8 @@
 	}
 
 	.input-group {
+		display: flex;
+		flex-direction: column;
 		margin-bottom: 2.5rem;
 		text-align: left;
 	}
@@ -93,7 +95,7 @@
 		font-size: 1rem;
 		font-weight: 600;
 		display: block;
-		margin-bottom: 0.5rem;
+		margin-bottom: 0rem;
 	}
 
 	.input-group input {
