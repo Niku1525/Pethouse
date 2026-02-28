@@ -1,152 +1,151 @@
 /* Tipografía global */
 body {
-    margin: 0;
-    font-family: 'Raleway', sans-serif;
-    background-color: #ffffff;
+	margin: 0;
+	font-family: 'Raleway', sans-serif;
+	background-color: #ffffff;
 }
 
 /* navbar fijo */
 body {
-    padding-top: 90px;
+	padding-top: 90px;
 	background-color: #ffffff;
 }
 
 /* Links generales */
 a {
-    text-decoration: none;
+	text-decoration: none;
 }
 
 /* Altura y transición */
 .navbar {
-    transition: all 0.3s ease;
-    padding: 18px 0;
+	transition: all 0.3s ease;
+	padding: 18px 0;
 }
 
 /* Estado inicial */
 .navbar-top {
-    background: #ffffff;
+	background: #ffffff;
 }
 
 /* Cuando se hace scroll */
 .navbar-scrolled {
-    background: white;
-    padding: 10px 0;
+	background: white;
+	padding: 10px 0;
 }
 
 /* Logo llamativo */
 .brand-logo {
-    font-family: 'Dancing Script', cursive;
-    font-size: 2rem;
-    color: #696969;
-    transition: color 0.3s ease;
-    
+	font-family: 'Dancing Script', cursive;
+	font-size: 2rem;
+	color: #696969;
+	transition: color 0.3s ease;
 }
 
 .brand-logo:hover {
-    color: #ffcb1b;
+	color: #ffcb1b;
 }
 
 /* Links */
 .nav-custom {
-    font-weight: 600;
-    color: #696969;
-    margin-left: 20px;
-    transition: color 0.3s ease;
+	font-weight: 600;
+	color: #696969;
+	margin-left: 20px;
+	transition: color 0.3s ease;
 }
 
 .nav-custom:hover {
-    color: #ffcb1b;
+	color: #ffcb1b;
 }
 
 .login-navbar {
 	background: #ffffff;
 	padding: 0;
-	margin: 0;;
-	box-shadow: none;}
-	
-
+	margin: 0;
+	box-shadow: none;
+}
 
 /* Botón login */
 .btn-login {
-    background: #ffcb1b;
-    color: white;
-    padding: 8px 18px;
+	background: #ffcb1b;
+	color: white;
+	padding: 8px 18px;
 }
 
 .btn-login:hover {
-    background: #ffcb1b;
+	background: #ffcb1b;
 }
 
 .hero-section {
-    position: relative;
+	position: relative;
 	background-color: #ffffff;
-    background-image: url('/img/mascotas_fondo.png');
-    background-size: cover;
-    background-position: center;
-    min-height: 70vh;
+	background-image: url('/img/mascotas_fondo.png');
+	background-size: cover;
+	background-position: center;
+	min-height: 70vh;
 }
 
 .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(78, 76, 76, 0.4));
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(78, 76, 76, 0.4));
 }
 
 .hero-section .container {
-    z-index: 2;
+	z-index: 2;
 }
 
 .pet-card {
-		cursor: pointer;
-		text-align: center;
-		transition: transform 0.3s ease, box-shadow 0.3s ease;
-	}
+	cursor: pointer;
+	text-align: center;
+	transition:
+		transform 0.3s ease,
+		box-shadow 0.3s ease;
+}
 
-	.pet-card img {
-		width: 100%;
-		height: 200px;
-		object-fit: cover;
-		border-radius: 12px;
-	}
+.pet-card img {
+	width: 100%;
+	height: 200px;
+	object-fit: cover;
+	border-radius: 12px;
+}
 
-	.pet-card h6 {
-		margin-top: 10px;
-		font-weight: 700;
-	}
+.pet-card h6 {
+	margin-top: 10px;
+	font-weight: 700;
+}
 
-	.pet-card small {
-		color: #777;
-	}
+.pet-card small {
+	color: #777;
+}
 
-	.pet-card:hover {
-		transform: translateY(-6px);
-	}
+.pet-card:hover {
+	transform: translateY(-6px);
+}
 
-    .small-card img {
+.small-card img {
 	height: 200px;
 	object-fit: cover;
 }
 
-    .small-card .card-body {
+.small-card .card-body {
 	padding: 0.8rem;
 }
-    
+
 .card {
-		transition:
-			transform 0.3s ease,
-			box-shadow 0.3s ease;
-	}
+	transition:
+		transform 0.3s ease,
+		box-shadow 0.3s ease;
+}
 
-	.card:hover {
-		transform: translateY(-8px);
-		box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
-	}
+.card:hover {
+	transform: translateY(-8px);
+	box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
 
-
-    .modal-backdrop {
+.modal-backdrop {
 	position: fixed;
 	inset: 0;
 	background: rgba(0, 0, 0, 0.6);
@@ -208,7 +207,7 @@ a {
 	position: absolute;
 	top: 15px;
 	right: 20px;
-	z-index: 10; 
+	z-index: 10;
 	background: none;
 	border: none;
 	font-size: 1.8rem;
@@ -266,4 +265,9 @@ a {
 	.image-container {
 		height: 250px;
 	}
+}
+.input-group {
+	display: flex;
+	flex-direction: column;
+	gap: 6px;
 }

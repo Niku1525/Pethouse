@@ -8,7 +8,7 @@
 
 	<div class="row">
 		<div class="col-md-4">
-			<img src={pet.image_url} class="img-fluid rounded shadow" />
+			<img src={pet.image_url} class="img-fluid rounded shadow" alt={pet.name} />
 		</div>
 
 		<div class="col-md-8">
