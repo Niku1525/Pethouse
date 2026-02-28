@@ -48,7 +48,7 @@
 				</li>
 
 				<li class="nav-item">
-					<a class="nav-link nav-custom" href="/rastreador">Rastreador</a>
+					<a class="nav-link nav-custom" href="/usuarios/rastreador">Rastreador</a>
 				</li>
 
 				<li class="nav-item ms-3">
